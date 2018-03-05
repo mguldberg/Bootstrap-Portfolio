@@ -44,7 +44,7 @@ a.nav-link {
     padding-left: 15px;
     margin-left: 15px;
     line-height: 18px;
-    border-left: 3px solid #eee;
+    /* border-left: 3px solid #eee; */
   }
   
   /* a.nav-link:first-child {
@@ -184,8 +184,6 @@ div {
         width: 100%;
     }
     .portfoliodiv {
-        width: 200px;
-        height: 142px;
         float: left;
         top:0;
         position: relative;
@@ -242,22 +240,13 @@ input[type=submit] {
 }
 
 
-/* screen is either 768px or less in width */
-@media screen and (max-width: 768px) {
+/* handled small screen size (all phones in the google dev tools) so the navbar button will stay on the same line
+as my name in the title */
 
-    #headshotimg {
-        width: 659px;
-    }
-
-    
-}
-
-/* screen is either 768px or less in width */
-@media screen and (max-width: 1007px) {
-
-    photoimg {
-        width: 659px;
-    }
-
+@media screen and (max-width: 414px){
+    #nametitle,
+    #aboutmetitle,
+    h3.panel-title {
+    font-size: 18px;
     
 }

@@ -22,8 +22,7 @@
 
 <body>
 
-    <!-- top section with name and links to other pages -->
-
+    <!-- top section with name and links to other pages - leverages bootstrap navbar -->
     <div class="container container-top">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" id="nametitle">Martin Guldberg</a>
@@ -33,34 +32,40 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">About
-                            <span class="sr-only">(current)</span>
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="portfolio.html">Portfolio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                    <li class="nav-item active"><!-- active tag for a different color to denote the page we are currently on -->
+                        <a class="nav-link" href="contact.html">Contact
+                                <span class="sr-only">(current)</span>
+                        </a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
 
-    <!-- middle section vertically, inludes the wallpaper and main content -->
+    <!-- open middle section vertically, inludes the wallpaper and main content -->
     <div class="container-middle">
+        <!-- open bootstrap container - leveraging the auto sizing - no wallpaper on this -->
         <div class="container">
+
+            <!-- open first column in row in middle container -->
             <div class="row middle-content-container">
-                <div class="col-sm-12 col-md-8">
+
+                <!-- open first column in row in middle container - contains the content -->
+                <div class=" col-md-8"> <!-- col-sm-12 -->
                     <div id="about-me-container">
                         <div class="page-header">
                             <h3>Contact</h3>
                         </div>
+
+                        <!-- open row in middle content container -->
                         <div class="row">
                             <div class="col-md-12">
-
 
                                 <!-- set up form for people to submit to contact me - button and form don't do anything with the data yet.  -->
                                 <section id="middletextcontent">
@@ -80,13 +85,15 @@
                                 </section>
                             </div>
                         </div>
+                        <!-- close row in middle content container -->
                     </div>
                 </div>
+                <!-- close first column in row in middle content container -->
 
 
 
-
-                <div class="col-sm-12 col-md-4">
+                <!-- open second column in row in middle container - contains the connect with me content -->
+                <div class="col-md-4"> <!-- col-sm-12 -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">Connect With Me</h3>
@@ -104,9 +111,15 @@
                         </div>
                     </div>
                 </div>
+                <!-- close second column in row in middle container - contains the connect with me content -->
             </div>
         </div>
+        <!-- close bootstrap container - leveraging the auto sizing - no wallpaper on this -->
+    </div>    
+    <!-- close middle section vertically, inludes the wallpaper and main content -->
 
+
+    <!-- bootstrap sticky footer -->
         <footer class="container-fluid">
             <div class="sticky-bottom">
                 <h5 class="text-center">Copyright &copy; Martin Guldberg</h5>
