@@ -1,2 +1,2 @@
-# Bootstrap-Portfolio
-This is the 2nd homework
+#Bootstrap-Portfolio - Homework #2
+#This is the 1st part of the homework
